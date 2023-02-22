@@ -8,7 +8,7 @@
   "lint-staged": {
     "*.{js,ts}": [
       "eslint --fix",
-      "yarn test --bail --findRelatedTests"
+      "yarn test --bail --findRelatedTests --passWithNoTests"
     ]
   },
   "scripts": {

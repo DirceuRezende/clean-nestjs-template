@@ -1,0 +1,9 @@
+node_modules/
+logs/
+dist/
+.env.example
+.eslintignore
+.eslint
+Dockerfile
+yarn-error
+.editorconfig

@@ -13,9 +13,6 @@ jobs:
         with:
           node-version: 18.x
 
-      - name: Run docker-compose
-        run: docker-compose up -d
-
       - name: Install dependencies
         run: yarn install
 

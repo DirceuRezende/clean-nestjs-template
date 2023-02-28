@@ -6,5 +6,9 @@
   "transform": {
     "^.+\\.(t|j)s$": "ts-jest"
   },
-  "modulePathIgnorePatterns": ["database-data", "database-data_test", "cache"]
+  "modulePathIgnorePatterns": ["database-data", "database-data_test", "cache"],
+  "moduleNameMapper": {
+    "^@/(.*)$": "<rootDir>/src/$1",
+    "^@test/(.*)$": "<rootDir>/test/$1"
+  }
 }

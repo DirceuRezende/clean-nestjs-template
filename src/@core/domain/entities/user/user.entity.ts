@@ -1,5 +1,5 @@
 import { Either, left, right } from '@/@core/shared';
-import { InvalidEmailError, InvalidNameError } from './errors';
+import { InvalidEmailError, InvalidNameError } from '../errors';
 import { EmailValidator, NameValidator } from '../validators';
 
 export type UserProps = {

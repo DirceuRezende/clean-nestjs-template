@@ -26,8 +26,11 @@ export class UserInMemoryRepository implements UserRepository {
       resolve(user);
     });
   }
-  addUser(user: User): Promise<void> {
+  addUser(user: User): Promise<User> {
     this.items.push(user);
-    return;
+
+    return new Promise((resolve) => {
+      resolve(user);
+    });
   }
 }

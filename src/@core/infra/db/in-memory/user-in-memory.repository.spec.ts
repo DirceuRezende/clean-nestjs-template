@@ -3,7 +3,7 @@ import { UserInMemoryRepository } from './user-in-memory.repository';
 
 describe('UserInMemoryRepository', () => {
   describe('addUser', () => {
-    it('should add a new user', () => {
+    it('should add a new user', async () => {
       const user = User.create({
         email: 'any@example.com',
         emailVerified: false,
@@ -13,7 +13,7 @@ describe('UserInMemoryRepository', () => {
 
       const repository = new UserInMemoryRepository([]);
 
-      repository.addUser(user);
+      await repository.addUser(user);
 
       expect(repository.items[0]).toEqual(user);
     });
